@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap"
@@ -12,19 +25,109 @@
     />
   </head>
   <body>
-    <h1 class="maintitle">Car Info web</h1>
-    <hr />
-    <form id="searchform">
-      <label for="Make">Make </label><br />
-      <input type="make" id="make" name="make" value="" /><br />
-      <label for="model">Model </label><br />
-      <input type="Model" name="model" id="model" value="" /><br />
-      <label for="Year">Year </label><br />
-      <input type="year" id="year" value="" /><br /><br />
-      <input type="submit" id="submit" value="submit" />
-    </form>
+    
+    <div>
+      <h1 class="maintitle">VINMAX</h1>
+    </div>
+    <main>
+     <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              style="background-image: url(./img/bentley.jpeg)"
+              class="d-block w-100 img-item"
+            ></div>
+          </div>
+          <div class="carousel-item">
+            <div
+              style="background-image: url(./img/Taycan.jpeg)"
+              class="d-block w-100 img-item"
+            ></div>
+          </div>
+          <div class="carousel-item">
+            <div
+              style="background-image: url(./img/Tesla.jpeg)"
+              class="d-block w-100 img-item"
+            ></div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-    <div id="car-container"></div>
+      <div>
+        <div class="searching">
+          <form id="vindecoder">
+            <h3 class="vin_title">VIN Search</h3>
+            <div class="">
+            <label for="vinnum"> Vin number </label><br />
+            <input type="text" id="vinnum" name="vinnum" /><br />
+            <div class="vin_exp">
+              <h6>
+                A vehicle identification number (VIN) is a unique code assigned
+                to every motor vehicle when it's manufactured. The VIN is a
+                17-character string of letters and numbers.
+              </h6>
+            </div>
+          </form>
+          <div class="car_searching">
+            <form id="searchform">
+              <h3 class="car_title">Car Info</h3>
+              <label for="make">Make </label><br />
+              <input type="text" id="make" name="make" value="" /><br />
+
+              <label for="model">Model </label><br />
+              <input type="text" name="model" id="model" value="" /><br />
+
+              <label for="year">Year </label><br />
+              <input type="number" id="year" value="" /><br /><br />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
   <script src="./script.js"></script>
 </html>

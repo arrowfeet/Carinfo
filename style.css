@@ -1,20 +1,73 @@
 .maintitle {
-    font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-left: 30px;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 42px;
+  font-weight: 600;
+  padding-bottom: 35px;
+  border-bottom: solid 3px;
+  margin: 32px 0;
 }
 
 hr {
-    display: block;
-    border-style: solid;
-    border-width: 5px;
+  display: block;
+  border-style: solid;
+  border-width: 1px;
 }
 
-.searchform {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    margin-left: 30px;
+#searchform {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
+h5 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.img-item {
+  height: 697px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vin_title {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display:flex;
+  justify-content: center;
+}
+
+.car_title {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.car_searching {
+  display: flex;
+  width: 50%;
+}
+
+#vindecoder {
+  width: 50%;
+  flex-direction: column;
+  padding: 32px;
+  margin-top:32px;
+  border-right: 1px solid black;
+}
+
+.searching {
+  display: flex;
 }
